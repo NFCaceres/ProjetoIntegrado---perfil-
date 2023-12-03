@@ -1,12 +1,145 @@
 
-    <p>profile works!</p>
-<div id="perfil"> 
- <!-- <button (click)="home()">home</button> -->
-  <button (click)="logout()">Logout</button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>profile works!</p>
+  <div id="perfil">
+    <div class="navegação">
+      <!-- <button (click)="home()">home</button> -->
+      <button (click)="logout()">Logout</button>
       <h1>Perfil de: {{ userData?.userType }}</h1>
       <p>Nome do Usuário: {{ userData?.name }}</p>
       <p>Nick Name: {{ userData?.user }}</p>
       <!-- Use o operador ? para evitar erros caso userData seja nulo ou indefinido -->
+    </div>
 
+    <div class="">
+      <div class="" id="Identidade">
+        <img src="" id="Foto_perfil">
+        <div class="" id="Nome-Sobrenome">
+          <h2 id="Nome"></h2>
+          <h2 id="Sobrenome"></h2>
+        </div>
+      </div>
 
+      <div class="area_do_perfil" id="Personalizar">
+        <button class="SalavarAlt" id="" (click)="">Salvar Alterações</button>
+        <div class="" id="display_conquistas">
+          <div class="titulacao" id="">
+            <h3 id="">Minhas Conquistas</h3>
+            <button class="edicao" id="editar_conqs"><img src=""></button>
+          </div>
+          <div class="" id="">
+            <div class="medalha">
+              <img>
+              <h5 class="nome_conquista" id="">Crise de Identidade<h5>
+            </div>
+            <div class="medalha">
+              <img>
+              <h5 class="nome_conquista" id="">Primeiras Palavras<h5>
+            </div>
+            <div class="medalha">
+              <img>
+              <h5 class="nome_conquista" id="">Boneco de palito<h5>
+            </div>
+          </div>
+        </div>
+        <div class="" id="">
+          <div class="titulacao" id="">
+            <h3 id="">Meu Avatar</h3>
+            <button class="edicao" id="editar_avatar"><img src=""></button>
+          </div>
+          <div class="" id="Editar_icone">
+            <p id="">Editar Icone</p>
+            <button class="" id="" (click)=""></button>
+            <img class="icones" src="">
+          </div>
+          <div class="" id="Editar_titulo">
+            <p id="">Editar Icone</p>
+            <button class="" id="" (click)=""></button>
+            <img class="titulos_p" src="">
+          </div>
+        </div>
+      </div>
 
+      <div class="area_do_perfil" id="Certificados">
+        <div class="" id="">
+          <div class="titulacao" id="">
+            <h2 id="">Certificados</h2>
+          </div>
+
+          <button class="baixar" id="" (click)=""><img src=""></button>
+
+          <div class="certificados_conteiner">
+            <div class="certificado" id="">
+              <h5 id="">Palestra</h5>
+              <p id="">02/12/2023 - 16:00</p>
+              <button class="baixar" id="" (click)=""><img src=""></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="area_do_perfil" id="Medalhas">
+        <div class="titulacao" id="">
+          <h2 id="">Medalhas</h2>
+        </div>
+
+        <div class="medelhas_conteiner">
+          <div class="medalha" id="">
+            <img class="" id="" src="">
+            <h4 id="">Boneco de Palito</h4>
+            <p id="">Edite seu perfil pela primeira vez</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="area_do_perfil" id="Configurações">
+
+        <button class="SalavarAlt" id="" (click)="">Salvar Alterações</button>
+
+        <div class="titulacao" id="">
+          <h2 id="">Configurações</h2>
+          <button>habilitar edição</button>
+        </div>
+
+        <div class="configs_conteiner">
+          <div class="config">
+            <label for="">Nome:</label>
+            <input class="" type="text">
+          </div>
+          <div class="config">
+            <label for="">Sobrenome:</label>
+            <input class="" type="text">
+          </div>
+          <div class="config">
+            <label for="">E-mail:</label>
+            <input class="" type="email">
+          </div>
+          <div class="config">
+            <label for="">Senha:</label>
+            <input class="" type="password">
+            <button class="" id="">Redefinir senha</button>
+          </div>
+          <div class="config">
+            <label for="">Sou:</label>
+            <select id="">
+              <option value="Aluno">Aluno</option>
+              <option value="Ministrante">Ministrante</option>
+              <option value="Admin">Admin</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
